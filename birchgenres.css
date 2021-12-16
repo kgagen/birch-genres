@@ -1,0 +1,223 @@
+
+/* CORE ELEMENTS */
+html {
+  padding-left: 3%;
+  padding-right: 3%;
+	background-color: #023047;
+	}
+body { 
+  background-color: #219ebc;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* responsive header */
+header img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #023047;
+  color: #ffb703;
+  text-align: center;
+  padding: 15px;
+  font-size: 90%;
+}
+
+h1 {font-size: 130%; font-family: 'Roboto Condensed', sans-serif; color:#023047;}
+h2 { font-size: 110%; font-family: 'Roboto Condensed', sans-serif; color:#023047 }
+a:link {color:  #fb8500}
+a:visited {color:  #fb8500}
+
+
+/*NAVIGATION BAR*/
+nav {
+  background-color: #023047;
+	margin: 5px 10px 5px 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 120%;
+}
+nav ul {
+	margin: 0px;
+	padding: 5px 10px 5px 10px;
+}
+.dropdown li {
+  float: left;
+ }
+
+nav ul, li, .dropbtn {
+	display: inline-block;
+  text-align: center;
+	padding: 5px 10px 5px 10px;
+}
+
+li.dropdown {
+  display: inline-block;
+ }
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color:  #023047;
+   z-index: 1;
+ }
+ .dropdown-content a {
+   color: #fb8500;
+   padding: 10px 10px;
+   text-decoration: none;
+   display: block;
+   text-align: center;
+ }
+ .dropdown-content a:hover {background-color: #06608d;}
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+
+/* HOMEPAGE */
+
+div#sidebar {
+    display: table-cell;
+    background-color: #58B4D1;
+    width: 25%;
+    font-size: 100%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+div#sidebar ul li {
+  display: list-item;
+  list-style-type: circle;
+  margin: 0px;
+  text-align: justify;
+  color: #06608d}
+
+div#main  {
+  display: table-cell;
+  background:#8ecae6;
+  width: auto;
+  font-size: 100%;
+  padding: 15px;
+  vertical-align: top;
+  text-align: center;
+}
+
+div#sidebar a {color: #06608d}
+div#main a {color: #06608d}
+
+/* GENRE GUIDE PAGE */
+
+section#guide  {
+  background:       #8ECAE6;
+  font-size:        150%;
+  padding:          15px;
+  vertical-align: top;
+}
+
+/* BOOK RECOMMENDATION PAGES*/
+
+/*the genre block*/
+.bookheading {
+  font-size: 150%;
+  background: #8ECAE6;
+  padding: 15px;
+  margin: 50px 50px 50px 50px;
+  text-align: center;
+}
+
+/*responsive images */
+.responsive {
+  max-width: 100%;
+	height: auto;
+}
+
+/*book recommendation columns/rows*/
+.column {
+  float: left;
+  width: 25%;
+  margin: 10px 10px 10px 50px;
+  padding: 15px;
+  text-align: center;
+}
+.column h2 {
+  font-size: 110%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color:  #034c70;
+}
+.column a, h1 {
+  text-decoration: none;
+  font-size: 120%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color:  #023047;
+}
+.column p {
+  font-size: 100%;
+  color: #023047;
+}
+.row:after {
+  content: "";
+  display: table;
+   clear: both;
+}
+
+/* book columns */
+.column-performer {
+  float: left;
+  width: 50%;
+}
+
+/* clear floats */
+.row:after {
+  content: "";
+  display: table;
+   clear: both;
+}
+
+/* makes a one column-layout instead of multiple columns */
+@media screen and (max-width: 1200px) {
+  .bookheading {
+    font-size: 100%;
+  }
+  .column {
+    width: 90%;
+    margin: 10px 10px 10px 10px;
+  }
+}
+
+
+/* HOW TO PAGES */
+.content {
+  font-size: 100%;
+  background: #8ECAE6;
+  padding: 15px 50px 15px 50px;
+  margin: 5px 10px 5px 10px;
+  text-align: center;
+}
+.content a {color: #06608d}
+
+.content ul li{
+  display: list-item;
+  list-style-type: circle;
+  text-align: left;
+  margin-left: 50px;
+  overflow: hidden;
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
